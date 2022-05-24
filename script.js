@@ -113,17 +113,19 @@ var lcNumSpc2 = shuffle(lcNumSpc1);
 // include all
 var combinedArr = generateLcRan.concat(generateUcRan).concat(generateSpcChar).concat(ranNumArr);
 var ranCombinedArr = shuffle(combinedArr);
-// console.log(ranCombinedArr.join(''));
+console.log(ranCombinedArr.join(''));
 
 function generatePassword() {
-    if (document.getElementById('lc').checked === true && document.getElementById('uc').checked === false && document.getElementById('num').checked === false && document.getElementById('spc').checked === false) {
-        document.getElementById('generatedPass').innerHTML(lcOnly.join(''));
-    } else if (document.getElementById('lc').checked === false && document.getElementById('uc').checked === true && document.getElementById('num').checked === false && document.getElementById('spc').checked === false) {
-        document.getElementById('generatedPass').innerHTML(ucOnly.join(''));
-    } else if (document.getElementById('lc').checked === false && document.getElementById('uc').checked === false && document.getElementById('num').checked === true && document.getElementById('spc').checked === false) {
-        document.getElementById('generatedPass').innerHTML(ranNumArr1.join(''));
+    if (document.getElementById('lc').checked === true) {
+        document.getElementById('generatedPass').innerHTML = lcOnly.join('');
     }
-}
-// document.getElementById('createBtn').onclick = 
+    // if (document.getElementById('lc').checked && document.getElementById('uc').checked === false && document.getElementById('num').checked === false && document.getElementById('spc').checked === false) {
+    //     document.getElementById('generatedPass').innerHTML = lcOnly.join('');
+    // } else if (document.getElementById('lc').checked === false && document.getElementById('uc').checked === true && document.getElementById('num').checked === false && document.getElementById('spc').checked === false) {
+    //     document.getElementById('generatedPass').innerHTML = ucOnly.join('');
+    // } else if (document.getElementById('lc').checked === false && document.getElementById('uc').checked === false && document.getElementById('num').checked === true && document.getElementById('spc').checked === false) {
+    //     document.getElementById('generatedPass').innerHTML = ranNumArr1.join('');
+    // }
+};
 
-  
+document.getElementById('createBtn').onclick = generatePassword();

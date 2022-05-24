@@ -81,3 +81,8 @@ body {
     position: relative;
     bottom: 50px;
 }
+
+#generatedPass {
+    position: relative;
+    top: 30px;
+}
