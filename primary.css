@@ -1,0 +1,83 @@
+:root {
+    --header-font: 'Koulen', cursive;
+    --body-font: 'Titillium Web', sans-serif;
+    --primary-color: #10AB77;
+    --secondary-color: #08553B;
+    --tertiary-color: #02150F;
+    --white: #FFFFFF;
+}
+
+body {
+    background-image: linear-gradient(#FFFFFF, #10AB77);
+    height: 100vh;
+    width: 100vw;
+}
+
+.align {
+    display: flex;
+    justify-content: center;
+}
+
+#header, #createBtn {
+    font-family: var(--header-font);
+}
+
+#checkboxes, #subHeader, #subHeader2 {
+    font-family: var(--body-font);
+}
+
+#lcDiv, #ucDiv, #numDiv, #spcDiv, #createBtn {
+    color: var(--secondary-color);
+    background-color: var(--primary-color);
+    border-color: var(--secondary-color);
+    transition-duration: 0.5s;
+}
+
+#lcDiv:hover, #ucDiv:hover, #numDiv:hover, #spcDiv:hover, #createBtn:hover {
+    color: var(--primary-color);
+    background-color: var(--secondary-color);
+    border-color: var(--primary-color);
+}
+
+#lcDiv {
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+#spcDiv {
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+#header {
+    font-size: 60px;
+}
+
+#createBtn {
+    font-size: 25px;
+    border-radius: 15px;
+}
+
+#btnDiv {
+    position: relative;
+    top: 10px;
+}
+
+#subHeader {
+    font-size: 25px;
+    position: relative;
+    bottom: 75px;
+}
+
+#subHeader2, #checkboxes {
+    font-size: 20px;
+}
+
+#subHeader2, #subHeader, #header {
+    color: var(--secondary-color)
+}
+
+#inclDiv {
+    position: relative;
+    bottom: 50px;
+}
