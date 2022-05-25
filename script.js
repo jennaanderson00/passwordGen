@@ -116,16 +116,13 @@ var ranCombinedArr = shuffle(combinedArr);
 console.log(ranCombinedArr.join(''));
 
 function generatePassword() {
-    if (document.getElementById('lc').checked === true) {
+    if (document.getElementById('lc').checked && document.getElementById('uc').checked === false && document.getElementById('num').checked === false && document.getElementById('spc').checked === false) {
         document.getElementById('generatedPass').innerHTML = lcOnly.join('');
-    }
-    // if (document.getElementById('lc').checked && document.getElementById('uc').checked === false && document.getElementById('num').checked === false && document.getElementById('spc').checked === false) {
-    //     document.getElementById('generatedPass').innerHTML = lcOnly.join('');
-    // } else if (document.getElementById('lc').checked === false && document.getElementById('uc').checked === true && document.getElementById('num').checked === false && document.getElementById('spc').checked === false) {
-    //     document.getElementById('generatedPass').innerHTML = ucOnly.join('');
-    // } else if (document.getElementById('lc').checked === false && document.getElementById('uc').checked === false && document.getElementById('num').checked === true && document.getElementById('spc').checked === false) {
-    //     document.getElementById('generatedPass').innerHTML = ranNumArr1.join('');
-    // }
+    } else if (document.getElementById('lc').checked === false && document.getElementById('uc').checked === true && document.getElementById('num').checked === false && document.getElementById('spc').checked === false) {
+        document.getElementById('generatedPass').innerHTML = ucOnly.join('');
+    } else if (document.getElementById('lc').checked === false && document.getElementById('uc').checked === false && document.getElementById('num').checked === true && document.getElementById('spc').checked === false) {
+        document.getElementById('generatedPass').innerHTML = ranNumArr1.join('');
+    } // rest of the conditions go here
 };
 
 document.getElementById('createBtn').onclick = generatePassword();
