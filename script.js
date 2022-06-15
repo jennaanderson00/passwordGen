@@ -125,4 +125,4 @@ function generatePassword() {
     } // rest of the conditions go here
 };
 
-document.getElementById('createBtn').onclick = generatePassword();
+document.getElementById('createBtn').onclick = generatePassword;
