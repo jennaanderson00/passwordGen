@@ -1,3 +1,22 @@
+// click event for generateBtn
+var boxes = document.getElementById('inclDiv');
+var createBtn = document.getElementById('createBtn');
+var genBtn = document.getElementById('generateBtn');
+
+boxes.style.display = "none";
+createBtn.style.display = "none";
+
+function displayChoices() {
+  if (boxes.style.display === "none" && createBtn.style.display === "none") {
+    boxes.style.display = "block";
+    createBtn.style.display = "block";
+    genBtn.style.display = "none";
+  } else {
+    boxes.style.display = "none";
+    createBtn.style.display = "none";
+  }
+}
+
 // function to shuffle array
 function shuffle(array) {
     let currentIndex = array.length,  randomIndex;

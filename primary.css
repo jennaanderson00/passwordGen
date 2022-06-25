@@ -25,14 +25,14 @@ body {
     font-family: var(--body-font);
 }
 
-#lcDiv, #ucDiv, #numDiv, #spcDiv, #createBtn {
+#lcDiv, #ucDiv, #numDiv, #spcDiv, #createBtn, #generateBtn {
     color: var(--secondary-color);
     background-color: var(--primary-color);
     border-color: var(--secondary-color);
     transition-duration: 0.5s;
 }
 
-#lcDiv:hover, #ucDiv:hover, #numDiv:hover, #spcDiv:hover, #createBtn:hover {
+#lcDiv:hover, #ucDiv:hover, #numDiv:hover, #spcDiv:hover, #createBtn:hover, #generateBtn:hover {
     color: var(--primary-color);
     background-color: var(--secondary-color);
     border-color: var(--primary-color);
@@ -52,9 +52,18 @@ body {
     font-size: 60px;
 }
 
-#createBtn {
+#createBtn, #generateBtn {
     font-size: 25px;
     border-radius: 15px;
+}
+
+#generateBtn {
+    font-family: var(--body-font);
+}
+
+#genPass {
+    display: flex;
+    justify-content: center;
 }
 
 #btnDiv {
