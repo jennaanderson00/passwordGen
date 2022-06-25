@@ -4,35 +4,35 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>lockbox</title>
+    <title>cloudwords</title>
     <link rel="stylesheet" href="primary.css">
     <!--google fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Koulen&family=Titillium+Web&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik+Bubbles&family=Titillium+Web:wght@200&display=swap" rel="stylesheet">
 </head>
 <body>
     <div>
-        <p class="align" id="header">lockbox</p>
+        <p class="align" id="header">cloudwords</p>
         <p class="align" id="subHeader">build your password</p>
     </div>
     <div id="inclDiv">
         <p class="align" id="subHeader2">what would you like to include?</p>
         <div class="align" id="checkboxes">
             <div id="lcDiv">
-                <input type="radio" id="lc" name="lc">
+                <input type="checkbox" id="lc" name="lc">
                 <label for="lc">lowercase letters</label>
             </div>
             <div id="ucDiv">
-                <input type="radio" id="uc" name="uc">
+                <input type="checkbox" id="uc" name="uc">
                 <label for="uc">uppercase letters</label>
             </div>
             <div id="numDiv">
-                <input type="radio" id="num" name="num">
+                <input type="checkbox" id="num" name="num">
                 <label for="num">numbers</label>
             </div>
             <div id="spcDiv">
-                <input type="radio" id="spc" name="spc">
+                <input type="checkbox" id="spc" name="spc">
                 <label for="spc">special characters</label>
             </div>
         </div>
@@ -40,8 +40,8 @@
     <div class="align" id="btnDiv">
         <button type="button" id="createBtn">create</button>
     </div>
-    <div class="align" id="generatedPass">
-
+    <div class="align">
+      <p id="generatedPass"></p>
     </div>
 <script src="script.js"></script>
 </body>

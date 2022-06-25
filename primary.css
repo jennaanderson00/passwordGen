@@ -1,14 +1,13 @@
 :root {
-    --header-font: 'Koulen', cursive;
+    --header-font: 'Rubik Bubbles', cursive;
     --body-font: 'Titillium Web', sans-serif;
-    --primary-color: #10AB77;
-    --secondary-color: #08553B;
-    --tertiary-color: #02150F;
-    --white: #FFFFFF;
+    --primary-color: #FFFFFF;
+    --secondary-color: #7099AC;
+    --tertiary-color: #253339;
 }
 
 body {
-    background-image: linear-gradient(#FFFFFF, #10AB77);
+    background-image: linear-gradient(#95cce6, #d5e7f0);
     height: 100vh;
     width: 100vw;
 }
@@ -74,7 +73,7 @@ body {
 }
 
 #subHeader2, #subHeader, #header {
-    color: var(--secondary-color)
+    color: var(--secondary-color);
 }
 
 #inclDiv {
@@ -82,7 +81,16 @@ body {
     bottom: 50px;
 }
 
+#header, #subHeader, #subHeader2 {
+    color: var(--primary-color);
+}
+
 #generatedPass {
     position: relative;
     top: 30px;
+    font-family: var(--body-font);
+    font-size: 25px;
+    color: var(--secondary-color);
+    background-color: var(--primary-color);
+    border-radius: 5px;
 }
