@@ -3,7 +3,7 @@
 ![image](https://user-images.githubusercontent.com/98507912/175790025-6cefe82b-e04e-482d-acf6-f204db2ac751.png)
 
 #### about
-_cloudwords_ was developed to create an easy way for people to generate random passwords.  the interface was designed to keep the process as simple as possible while providing Users with complex passwords to help keep their accounts safe.
+_cloudwords_ was developed to create an easy way for people to generate random passwords.  the interface was designed to keep the process as simple as possible while providing Users with complex passwords to help keep their accounts safe.  try it out here: [cloudwords](https://jennaanderson00.github.io/passwordGen/)
 
 #### features
 
